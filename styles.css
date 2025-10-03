@@ -1,0 +1,16 @@
+nav {
+    background-color: rgb(180, 211, 200);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+body {
+    margin: 0;
+    font-family: "Zalando Sans Expanded", sans-serif;
+}
+
+.head {
+    display: flex;
+    margin: 20px;
+}
