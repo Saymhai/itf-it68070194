@@ -1,5 +1,6 @@
-const myinput = document.getElementById("myinput")
+const CAB = document.getElementById("CAB")
+const CCB = document.getElementById("CCB")
 
 function add() {
-    myinput.value = Number(myinput.value) + 1
+    CAB.value = Number(CAB.value) + 1000
 }
