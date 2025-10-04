@@ -12,16 +12,20 @@
 <body>
     <nav>
         <p>68070194</p>
-        <h1 style="font-size: 60px; color: rgb(255, 250, 250); text-shadow: -5px 2px 4px #000000;">ITF Website</h1>  
+        <h1 style="font-size: 40px; color: rgb(255, 250, 250); text-shadow: -5px 2px 4px #000000;">ITF Website</h1>  
         <p>Week 14</p>
     </nav>
     <div class="head">
-        <img src="pic/y5.png" width="150px">
+        <img src="pic/y5.png" width="150px" style="margin-right: 30px;">
         <div class="textH">
             <h1 style="font-family: Libertinus Keyboard;">ITF SIMPLE BANK</h1>
             Welcome to my first HTML + CSS + LS website!
         </div>
     </div> <hr>
+
+    <div class="middle" id="widget">
+        <p >1, Current account balance: 1000, Current cash balance: 1000</p>
+    </div>
     
     <div class="bottom">
         <div class="left">
@@ -38,21 +42,65 @@
                 <img src="pic/y4.png" width="100px">
                 <div class="balance">
                     <p id="topic">Balance Infomation</p>
-                    <p>Current account balance: <input type="number" id="CAB" value="1000"> <br>
-                    <p>Current cash balance: <input type="number" id="CCB" value="1000"> </p>
-                    <button onclick="changeCurrent()">Change</button>
+                    <p>Current account balance: <input type="number" id="CAB" value="1000" class="css-input"> <br>
+                    <p>Current cash balance: <input type="number" id="CCB" value="1000" class="css-input"> </p>
+                    <button class="Btn-Container" onclick="changeCurrent()">
+                        <span class="text">Chang</span>
+                        <span class="icon-Container">
+                            <svg
+                            width="13"
+                            height="16"
+                            viewBox="-2 1 17 18"
+                            fill="nones"
+                            xmlns="http://www.w3.org/2000/svg"
+                            >
+                            <circle cx="1.61321" cy="1.61321" r="1.5" fill="black"></circle>
+                            <circle cx="5.73583" cy="1.61321" r="1.5" fill="black"></circle>
+                            <circle cx="5.73583" cy="5.5566" r="1.5" fill="black"></circle>
+                            <circle cx="9.85851" cy="5.5566" r="1.5" fill="black"></circle>
+                            <circle cx="9.85851" cy="9.5" r="1.5" fill="black"></circle>
+                            <circle cx="13.9811" cy="9.5" r="1.5" fill="black"></circle>
+                            <circle cx="5.73583" cy="13.4434" r="1.5" fill="black"></circle>
+                            <circle cx="9.85851" cy="13.4434" r="1.5" fill="black"></circle>
+                            <circle cx="1.61321" cy="17.3868" r="1.5" fill="black"></circle>
+                            <circle cx="5.73583" cy="17.3868" r="1.5" fill="black"></circle>
+                            </svg>
+                    </span>
+                    </button>
                 </div>
             </div>
             <div id="box">
                 <img src="pic/y7.png" width="100px">
                 <div class="operation">
                     <p id="topic">Bank Operation</p>
-                    <select name="action" id="action">
+                    <select class="select" id="action">
                         <option value="deposit">Deposit</option>
-                        <option value="">Withdraw</option>
+                        <option value="withdraw">Withdraw</option>
                     </select> 
-                    <input type="number" value="1"> <br>
-                    <button onclick="act()">Proceed</button>
+                    <input type="number" value="1" class="css-input" id="BO"> <br>
+                    <button class="Btn-Container" onclick="operationProceed()">
+                        <span class="text">Proceed</span>
+                        <span class="icon-Container">
+                            <svg
+                            width="13"
+                            height="16"
+                            viewBox="-2 1 17 18"
+                            fill="nones"
+                            xmlns="http://www.w3.org/2000/svg"
+                            >
+                            <circle cx="1.61321" cy="1.61321" r="1.5" fill="black"></circle>
+                            <circle cx="5.73583" cy="1.61321" r="1.5" fill="black"></circle>
+                            <circle cx="5.73583" cy="5.5566" r="1.5" fill="black"></circle>
+                            <circle cx="9.85851" cy="5.5566" r="1.5" fill="black"></circle>
+                            <circle cx="9.85851" cy="9.5" r="1.5" fill="black"></circle>
+                            <circle cx="13.9811" cy="9.5" r="1.5" fill="black"></circle>
+                            <circle cx="5.73583" cy="13.4434" r="1.5" fill="black"></circle>
+                            <circle cx="9.85851" cy="13.4434" r="1.5" fill="black"></circle>
+                            <circle cx="1.61321" cy="17.3868" r="1.5" fill="black"></circle>
+                            <circle cx="5.73583" cy="17.3868" r="1.5" fill="black"></circle>
+                            </svg>
+                    </span>
+                    </button>
                 </div>
             </div>
         </div>
@@ -62,14 +110,36 @@
                 <img src="pic/y2.png" width="110px">
                 <div class="currency">
                     <p id="topic">Currency Converter</p>
-                    <p>Input balance: <input type="number" id="inbal" value="0"> <br>
-                    <p>Output balance: <input type="number" id="outbal" value="0"> </p>
+                    <p>Input balance: <input type="number" id="inbal" value="0" class="css-input"> <br>
+                    <p>Output balance: <input type="number" id="outbal" value="0" class="css-input"> </p>
                     Input currency
-                    <select name="curr" id="curr">
+                    <select class="select" id="curr">
                         <option value="usd">USD</option>
                         <option value="thb">THB</option>
                     </select>
-                    <button onclick="cont()">Convert</button>
+                    <button class="Btn-Container" onclick="currencyConvert()">
+                        <span class="text">Convert</span>
+                        <span class="icon-Container">
+                            <svg
+                            width="13"
+                            height="16"
+                            viewBox="-2 1 17 18"
+                            fill="nones"
+                            xmlns="http://www.w3.org/2000/svg"
+                            >
+                            <circle cx="1.61321" cy="1.61321" r="1.5" fill="black"></circle>
+                            <circle cx="5.73583" cy="1.61321" r="1.5" fill="black"></circle>
+                            <circle cx="5.73583" cy="5.5566" r="1.5" fill="black"></circle>
+                            <circle cx="9.85851" cy="5.5566" r="1.5" fill="black"></circle>
+                            <circle cx="9.85851" cy="9.5" r="1.5" fill="black"></circle>
+                            <circle cx="13.9811" cy="9.5" r="1.5" fill="black"></circle>
+                            <circle cx="5.73583" cy="13.4434" r="1.5" fill="black"></circle>
+                            <circle cx="9.85851" cy="13.4434" r="1.5" fill="black"></circle>
+                            <circle cx="1.61321" cy="17.3868" r="1.5" fill="black"></circle>
+                            <circle cx="5.73583" cy="17.3868" r="1.5" fill="black"></circle>
+                            </svg>
+                    </span>
+                    </button>
                 </div>
             </div>
         </div>

@@ -4,24 +4,35 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 40px;
-    height: 60px;
+    height: 30px;
     color: rgb(255, 255, 255);
     text-shadow: 2px 2px 2px black;
     font-weight: bolder;
     border-radius: 0px 0px 50px 50px;
     font-family: "Bungee", sans-serif;
+    box-shadow: 0px 3px 15px #826b83;;
 }
 
 body {
     margin: 0;
     font-family: "Alan Sans", sans-serif;
-    background:linear-gradient(white 85%, #ffd8fa)
+    background:linear-gradient(white 85%, #ffd8fa);
 }
 
 .head {
     display: flex;
     margin: 20px;
     align-items: center;
+}
+
+.middle {
+    height: 300px;
+    width: 80%;
+    background-color: #c77fca4d;
+    margin: 20px;
+    border-radius: 10px;
+    justify-self: center;
+    padding: 5px 0px 0px 20px;
 }
 
 .bottom {
@@ -49,4 +60,84 @@ body {
 
 #topic {
     font-weight: bold;
+}
+
+
+
+/* From Uiverse.io by vinodjangid07 */ 
+.Btn-Container {
+  display: flex;
+  width: 120px;
+  height: fit-content;
+  background-color: #1d2129;
+  border-radius: 40px;
+  box-shadow: 0px 5px 10px #bebebe;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+}
+.icon-Container {
+  width: 20px;
+  height: 20px;
+  background-color: #f59aff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 3px solid #1d2129;
+}
+.text {
+  width: calc(120px - 45px);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.1em;
+  letter-spacing: 1.2px;
+}
+.icon-Container svg {
+  transition-duration: 1.5s;
+}
+.Btn-Container:hover .icon-Container svg {
+  transition-duration: 1.5s;
+  animation: arrow 1s linear infinite;
+}
+@keyframes arrow {
+  0% {
+    opacity: 0;
+    margin-left: 0px;
+  }
+  100% {
+    opacity: 1;
+    margin-left: 10px;
+  }
+}
+
+
+
+
+.css-input {
+    padding: 5px;
+    border-width: 2px;
+    border-color: #f3bdf3;
+    background-color: #f6edf5;
+    color: #000000;
+    border-style: solid;
+    border-radius: 12px;
+    padding-left: 15px;
+}
+
+
+.select {
+    width: 80px;
+    padding: 2px;
+    border-width: 2px;
+    border-color: #f3bdf3;
+    background-color: #1d2129;
+    color: white;
+    border-style: solid;
+    border-radius: 12px;
+    text-align: center;
 }
