@@ -12,8 +12,8 @@ function changeCurrent() {
     account = Number(CAB.value)
     cash = Number(CCB.value)
     n += 1
-    massage = n + ", Current account balance: " + account + ", Current cash balance: " + cash + "\n" + massage;
-    document.getElementById("widget").innerText = massage;
+    massage = n + ", Current account balance: " + account + ", Current cash balance: " + cash + '\n' + massage;
+    document.getElementById("widget").innerHTML = massage;
 }
 
 function operationProceed() {
@@ -35,7 +35,7 @@ function operationProceed() {
             massage = n + ", Current account balance: " + account + ", Current cash balance: " + cash + "\n" + massage;
         }
     }
-    document.getElementById("widget").innerText = massage;
+    document.getElementById("widget").innerHTML = massage;
 }
 
 function currencyConvert() {
