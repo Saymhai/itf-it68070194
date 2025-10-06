@@ -5,8 +5,8 @@ const action = document.getElementById("action")
 
 let account = 1000
 let cash = 1000
-let n = 1
-let massage = "1, Current account balance: 1000, Current cash balance: 1000"
+let n = 0
+let massage = ""
 
 function changeCurrent() {
     account = Number(CAB.value)
