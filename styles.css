@@ -26,13 +26,16 @@ body {
 }
 
 .middle {
+  display: flex;
     height: 300px;
     width: 80%;
     background-color: #c77fca4d;
     margin: 20px;
     border-radius: 10px;
     justify-self: center;
-    padding: 5px 0px 0px 20px;
+    padding: 25px 0px 0px 30px;
+    font-family: "Alan Sans", sans-serif;
+    font-size: 16px;
 }
 
 .bottom {
@@ -64,7 +67,7 @@ body {
 
 
 
-/* From Uiverse.io by vinodjangid07 */ 
+/* From Uiverse.io by vinodjangid07 */
 .Btn-Container {
   display: flex;
   width: 120px;
